@@ -1086,7 +1086,7 @@ class securepay_xml_transaction
 		if ((strcasecmp( $responseArray["approved"], "Yes" ) == 0) &&
 			(strcmp( $responseArray["responseCode"], "00" ) === 0 ||
 			 strcmp( $responseArray["responseCode"], "08" ) === 0 ||
-			 strcmp( $responseArray["responseCode"], "77" ) === 0 ))
+			 strcmp( $responseArray["responseCode"], "77" ) === 0 ) )
 		{
 			return true;
 		}

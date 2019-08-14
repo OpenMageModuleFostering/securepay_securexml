@@ -167,13 +167,11 @@ class SecurePay_Sxml_Model_Sxml extends Mage_Payment_Model_Method_Cc
 				$logger->info( "Preauth Declined. ".$txnResultCodeText );
 			}
 		}
-		
 		if ($approved==false)
 		{
 			$this->setError(array('message' => $txnResultCodeText,));
 			Mage::throwException("" . $txnResultCodeText);
 		}
-
 		
 		return $this;
 	}
@@ -394,7 +392,6 @@ class SecurePay_Sxml_Model_Sxml extends Mage_Payment_Model_Method_Cc
 		{
 			Mage::throwException("" . $txnResultCodeText);
 		}
-			
 		return $this;
 	}
 }

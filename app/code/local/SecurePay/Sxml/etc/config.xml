@@ -45,6 +45,17 @@
 				</connection>
 			</sxml_read>
 		</resources>
+		<payment>
+			<cc>
+				<types>
+					<DN>
+						<code>DN</code>
+						<name>Diners</name>
+						<order>100</order>
+					</DN>
+				</types>
+			</cc>
+		</payment>	
 	</global>
 	<default>
 		<payment>
@@ -57,7 +68,8 @@
 				<allowspecific>0</allowspecific>
 				<debug>0</debug>
 				<test>1</test>
-				<usecvv>1</usecvv>
+				<usecvv>0</usecvv>
+				<cctypes>OT</cctypes>
 				<payment_action>authorize</payment_action>
 			</Sxml>
 		</payment>
