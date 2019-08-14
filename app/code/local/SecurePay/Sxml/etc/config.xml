@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+
+<config>
+	<modules>
+		<SecurePay_Sxml>
+			<version>0.1.0</version>
+			<depends>
+				<Mage_payment />
+			</depends>
+		</SecurePay_Sxml>
+	</modules>
+	<global>
+		<models>
+			<Sxml>
+				<class>SecurePay_Sxml_Model</class>
+			</Sxml>
+		</models>
+		<blocks>
+			<Sxml>
+				<class>SecurePay_Sxml_Block</class>
+			</Sxml>
+		</blocks>
+		<helpers>
+			<Sxml>
+				<class>SecurePay_sxml_Helper</class>
+			</Sxml>
+		</helpers>
+		<resources>
+			<sxml_setup>
+				<setup>
+					<module>SecurePay_sxml</module>
+				</setup>
+				<connection>
+					<use>local_setup</use>
+				</connection>
+			</sxml_setup>
+			<sxml_write>
+				<connection>
+					<use>local_write</use>
+				</connection>
+			</sxml_write>
+			<sxml_read>
+				<connection>
+					<use>local_read</use>
+				</connection>
+			</sxml_read>
+		</resources>
+		<payment>
+			<cc>
+				<types>
+					<DN>
+						<code>DN</code>
+						<name>Diners</name>
+						<order>100</order>
+					</DN>
+				</types>
+			</cc>
+		</payment>	
+	</global>
+	<default>
+		<payment>
+			<Sxml>
+				<active>1</active>
+				<model>Sxml/Sxml</model>
+				<username>Change me</username>
+				<password>Change me</password>
+				<title>Credit Card (Securepay)</title>
+				<allowspecific>0</allowspecific>
+				<debug>1</debug>
+				<test>1</test>
+				<usecvv>0</usecvv>
+				<!--<cctypes>AE,VI,MC,DN</cctypes>-->
+				<payment_action>authorize</payment_action>
+			</Sxml>
+		</payment>
+	</default>
+</config>

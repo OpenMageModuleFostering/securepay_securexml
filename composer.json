@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/SecurePay_SecureXML",
+    "type": "magento-module",
+    "license": "OSL-v3.0",
+    "homepage": "",
+    "description": "Provides credit-card transactions via the SecurePay XML API",
+    "authors": [
+    {
+        "name": "Andrew Dubbeld",
+        "email": "support@securepay.com.au"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}
