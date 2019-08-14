@@ -168,19 +168,12 @@ class SecurePay_Sxml_Model_Sxml extends Mage_Payment_Model_Method_Cc
 			}
 		}
 		
-		if($status == '000' || $status == '008')
-		{
-			if ($approved==false)
-			{
-				$this->setError(array('message' => $txnResultCodeText,));
-				Mage::throwException("" . $txnResultCodeText);
-			}
-		}
-		else
+		if ($approved==false)
 		{
 			$this->setError(array('message' => $txnResultCodeText,));
 			Mage::throwException("" . $txnResultCodeText);
 		}
+
 		
 		return $this;
 	}
@@ -271,14 +264,7 @@ class SecurePay_Sxml_Model_Sxml extends Mage_Payment_Model_Method_Cc
 			}
 		}
 		
-		if($status == '000' || $status == '008')
-		{
-			if ($approved==false)
-			{
-				Mage::throwException("" . $txnResultCodeText);
-			}
-		}
-		else
+		if ($approved==false)
 		{
 			Mage::throwException("" . $txnResultCodeText);
 		}
@@ -345,14 +331,7 @@ class SecurePay_Sxml_Model_Sxml extends Mage_Payment_Model_Method_Cc
 			}
 		}
 		
-		if($status == '000' || $status == '008')
-		{
-			if ($approved==false)
-			{
-				Mage::throwException("" . $txnResultCodeText);
-			}
-		}
-		else
+		if ($approved==false)
 		{
 			Mage::throwException("" . $txnResultCodeText);
 		}
@@ -411,17 +390,11 @@ class SecurePay_Sxml_Model_Sxml extends Mage_Payment_Model_Method_Cc
 			}
 		}
 		
-		if($status == '000' || $status == '008')
-		{
-			if ($approved==false)
-			{
-				Mage::throwException("" . $txnResultCodeText);
-			}
-		}
-		else
+		if ($approved==false)
 		{
 			Mage::throwException("" . $txnResultCodeText);
 		}
+			
 		return $this;
 	}
 }

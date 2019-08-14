@@ -1,0 +1,96 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * SecurePay Directone Extension
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Open Software License (OSL 3.0)
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/osl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magentocommerce.com so we can send you a copy immediately.
+ *
+ * @category	SecurePay
+ * @package		SecurePay_Directone
+ * @author		Andrew Dubbeld
+ * @license		http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ */
+-->
+<config>
+    <modules>
+        <SecurePay_Directone>
+            <version>1.0</version>
+            <depends>
+                <Mage_Payment />
+            </depends>
+        </SecurePay_Directone>
+    </modules>
+    <global>
+    	<models>
+    		<directone>
+	    		<class>SecurePay_Directone_Model</class>
+	    	</directone>
+    	</models>
+    	<helpers>
+    		<directone>
+    			<class>SecurePay_Directone_Helper</class>
+    		</directone>
+    	</helpers>
+    	<blocks>
+            <directone>
+            	<class>SecurePay_Directone_Block</class>
+            </directone>
+        </blocks>
+        <resources>
+            <directone_setup>
+                <setup>
+                    <module>SecurePay_Directone</module>
+                </setup>
+                <connection>
+                    <use>directory_setup</use>
+                </connection>
+            </directone_setup>
+            <directone_write>
+                <connection>
+                    <use>local_write</use>
+                </connection>
+            </directone_write>
+            <directone_read>
+                <connection>
+                    <use>local_read</use>
+                </connection>
+            </directone_read>
+        </resources>
+    </global>
+    <frontend>
+        <routers>
+            <directone>
+                <use>standard</use>
+                <args>
+                    <module>SecurePay_Directone</module>
+                    <frontName>directone</frontName>
+                </args>
+            </directone>
+        </routers>
+    </frontend>
+	<default>
+        <payment>
+            <directone>
+                <active>1</active>
+                <cctypes>VI,MC</cctypes>
+                <model>directone/directone</model>
+                <order_status>1</order_status>
+                <notify_status>2</notify_status>
+                <test>1</test>
+                <simple>1</simple>
+                <title>DirectOne</title>
+                <return_text>Click here to complete the payment</return_text>
+                <username>replace_me</username>
+                <allowspecific>0</allowspecific>
+            </directone>
+        </payment>
+    </default>
+</config>

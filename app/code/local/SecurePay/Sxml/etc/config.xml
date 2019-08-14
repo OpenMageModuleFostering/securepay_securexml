@@ -3,7 +3,7 @@
 <config>
 	<modules>
 		<SecurePay_Sxml>
-			<version>0.1.0</version>
+			<version>1.0.4</version>
 			<depends>
 				<Mage_payment />
 			</depends>
@@ -45,31 +45,19 @@
 				</connection>
 			</sxml_read>
 		</resources>
-		<payment>
-			<cc>
-				<types>
-					<DN>
-						<code>DN</code>
-						<name>Diners</name>
-						<order>100</order>
-					</DN>
-				</types>
-			</cc>
-		</payment>	
 	</global>
 	<default>
 		<payment>
 			<Sxml>
-				<active>1</active>
+				<active>0</active>
 				<model>Sxml/Sxml</model>
 				<username>Change me</username>
 				<password>Change me</password>
-				<title>Credit Card (Securepay)</title>
+				<title>Credit Card</title>
 				<allowspecific>0</allowspecific>
-				<debug>1</debug>
+				<debug>0</debug>
 				<test>1</test>
-				<usecvv>0</usecvv>
-				<cctypes>OT</cctypes>
+				<usecvv>1</usecvv>
 				<payment_action>authorize</payment_action>
 			</Sxml>
 		</payment>

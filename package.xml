@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package>
     <name>SecurePay_SecureXML</name>
-    <version>1.0.3</version>
+    <version>1.0.4</version>
     <stability>stable</stability>
     <license>OSL v3.0</license>
     <channel>community</channel>
@@ -17,11 +17,13 @@
 Fraudguard, Direct Entry (Credit/Debit) and Periodic/Triggered payments are not supported.</description>
     <notes>In the config options, select Authorize for preauth/complete mode, or Authorize and Capture for standard payment mode.
 
-If there is a problem with the initial transaction, the bank response code and text will be displayed to the user.</notes>
+If there is a problem with the initial transaction, the bank response code and text will be displayed to the user.
+
+/magento/var/log needs to exist and be writable in order to use Debug mode.</notes>
     <authors><author><name>Andrew Dubbeld</name><user>auto-converted</user><email>support@securepay.com.au</email></author></authors>
-    <date>2009-10-27</date>
-    <time>22:59:26</time>
-    <contents><target name="magedesign"><dir name="frontend"><dir name="default"><dir name="default"><dir name="template"><dir name="sxml"><dir name="form"><file name="cc.phtml" hash="04bb010a9f58852b76aefffed34649e1"/></dir></dir></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="SecurePay_Sxml.xml" hash="e466d9b1db62c1844ccf17cca44bee5e"/></dir></target><target name="magelocal"><dir name="SecurePay"><dir name="Sxml"><dir name="Block"><dir name="Form"><file name="Cc.php" hash="412525e5c8c79ebd26cbf6033618b615"/></dir></dir><dir name="etc"><file name="config.xml" hash="c42f8f155c28cd5d53fd06fe40c5acda"/><file name="system.xml" hash="2439671842cf7dd71a04bb510d7f5839"/></dir><dir name="Helper"><file name="Data.php" hash="393c88c60eca919c13f255156355c536"/></dir><dir name="Model"><dir name="Source"><file name="Cctype.php" hash="bfe90747333890f72c94bd57b8b288c0"/></dir><dir name="Sxml"><file name="PaymentAction.php" hash="a5b8594da33b6113f3e9cc759c364d03"/><file name="Request.php" hash="95c4749da03d4e68b83706c8ce70ef0f"/><file name="Result.php" hash="f3f463587b5293a897f5c7e2bd4fc139"/></dir><file name="Sxml.php" hash="39b43e1680c3cb25844bd35e28ca0d38"/></dir></dir><file name="securepay_xml_api.php" hash="eb7530a7170fb7756ca80bad9698468b"/></dir></target></contents>
+    <date>2009-11-18</date>
+    <time>23:34:18</time>
+    <contents><target name="magedesign"><dir name="frontend"><dir name="default"><dir name="default"><dir name="template"><dir name="sxml"><dir name="form"><file name="cc.phtml" hash="6c04dbd1934b9dbf8b0dec3d33c8c735"/></dir></dir></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="SecurePay_Sxml.xml" hash="e466d9b1db62c1844ccf17cca44bee5e"/></dir></target><target name="magelocal"><dir name="SecurePay"><dir name="Directone"><dir name="Block"><file name="Form.php" hash="9822da8ca2dce1a2afcadae432be04c8"/><file name="Redirect.php" hash="9ae2a452f79bd7303f8004892598927b"/></dir><dir name="controllers"><file name="DirectoneController.php" hash="fa035fad9b4527e6f7b57dd39e6ef056"/></dir><dir name="etc"><file name="config.xml" hash="8821ff26d06b3316a08014d318ac26ef"/><file name="system.xml" hash="a5fca83459edc52148ab79e4256fc8ee"/></dir><dir name="Helper"><file name="Data.php" hash="c382cb57818a80808d42b3e61bfe1c33"/></dir><dir name="Model"><dir name="Directone"><file name="Request.php" hash="9de15a5a5862402fb3e1c522f5d8c1bc"/><file name="Result.php" hash="51001ff42edf9cc0acec1b765e829f1a"/><file name="Session.php" hash="3686130c5ac1cf390058b00adc55cf0d"/></dir><file name="Directone.php" hash="0d368e95ae08ecef37541d2295a72093"/></dir></dir><dir name="Sxml"><dir name="Block"><dir name="Form"><file name="Cc.php" hash="412525e5c8c79ebd26cbf6033618b615"/></dir></dir><dir name="etc"><file name="config.xml" hash="39e7804fc46c7ab67eb05ad68f556097"/><file name="system.xml" hash="8a54e354b1f5cc65c458a1ce3a8271ae"/></dir><dir name="Helper"><file name="Data.php" hash="393c88c60eca919c13f255156355c536"/></dir><dir name="Model"><dir name="Source"><file name="Cctype.php" hash="bfe90747333890f72c94bd57b8b288c0"/></dir><dir name="Sxml"><file name="PaymentAction.php" hash="a5b8594da33b6113f3e9cc759c364d03"/><file name="Request.php" hash="95c4749da03d4e68b83706c8ce70ef0f"/><file name="Result.php" hash="f3f463587b5293a897f5c7e2bd4fc139"/></dir><file name="Sxml.php" hash="c149dac0d8e8727e3dd127d91ef6f5de"/></dir></dir><file name="securepay_xml_api.php" hash="8aa43ac414a01fce5d1d5c26f32c1790"/></dir></target></contents>
     <compatible/>
     <dependencies/>
 </package>

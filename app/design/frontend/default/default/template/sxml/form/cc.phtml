@@ -33,7 +33,14 @@
                 <input type="text" title="<?php echo $this->__('Name on Card') ?>" class="required-entry input-text" id="<?php echo $_code ?>_cc_owner" name="payment[cc_owner]" value="<?php echo $this->htmlEscape($this->getInfoData('cc_owner')) ?>"/>
             </div>
         </li-->
-        <input type="hidden" id="<?php echo $_code ?>_cc_type" name="payment[cc_type]" value="OT" />
+        <!--<li>
+            <div class="input-box">
+                <label for="<?php echo $_code ?>_cc_type"><?php echo $this->__('Credit Card Type') ?> <span class="required">*</span></label><br />
+                <select id="<?php echo $_code ?>_cc_type" name="payment[cc_type]" class="required-entry validate-sxml-cc-type-select">
+                    <option value="OT">Other</option>
+                </select>
+            </div>
+        </li>-->
         <li>
             <div class="input-box">
                 <label for="<?php echo $_code ?>_cc_number"><?php echo $this->__('Credit Card Number') ?> <span class="required">*</span></label><br/>
