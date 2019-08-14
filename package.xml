@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package>
     <name>SecurePay_SecureXML</name>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <stability>stable</stability>
     <license>OSL v3.0</license>
     <channel>community</channel>
@@ -20,7 +20,7 @@ Fraudguard, Direct Entry (Credit/Debit) and Periodic/Triggered payments are not 
 If there is a problem with the initial transaction, the bank response code and text will be displayed to the user.</notes>
     <authors><author><name>Andrew Dubbeld</name><user>auto-converted</user><email>support@securepay.com.au</email></author></authors>
     <date>2009-10-16</date>
-    <time>04:10:10</time>
+    <time>04:14:17</time>
     <contents><target name="magedesign"><dir name="frontend"><dir name="default"><dir name="default"><dir name="template"><dir name="securepay"><dir name="form"><file name="cc.phtml" hash="6c04dbd1934b9dbf8b0dec3d33c8c735"/></dir></dir></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="SecurePay_Sxml.xml" hash="e466d9b1db62c1844ccf17cca44bee5e"/></dir></target><target name="magelocal"><dir name="SecurePay"><dir name="Sxml"><dir name="Block"><dir name="Form"><file name="Cc.php" hash="412525e5c8c79ebd26cbf6033618b615"/></dir></dir><dir name="etc"><file name="config.xml" hash="1dc198c9787f377be148d60ec7ca48fa"/><file name="system.xml" hash="5ee5515d045fae42d3da2032ffe73bf8"/></dir><dir name="Helper"><file name="Data.php" hash="393c88c60eca919c13f255156355c536"/></dir><dir name="Model"><dir name="Source"><file name="Cctype.php" hash="bfe90747333890f72c94bd57b8b288c0"/></dir><dir name="Sxml"><file name="PaymentAction.php" hash="a5b8594da33b6113f3e9cc759c364d03"/><file name="Request.php" hash="95c4749da03d4e68b83706c8ce70ef0f"/><file name="Result.php" hash="f3f463587b5293a897f5c7e2bd4fc139"/></dir><file name="Sxml.php" hash="39b43e1680c3cb25844bd35e28ca0d38"/></dir></dir><file name="securepay_xml_api.php" hash="eb7530a7170fb7756ca80bad9698468b"/></dir></target></contents>
     <compatible/>
     <dependencies/>
